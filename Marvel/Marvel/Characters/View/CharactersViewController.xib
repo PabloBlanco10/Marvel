@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersViewController" customModule="Marvel" customModuleProvider="target">
+            <connections>
+                <outlet property="stack" destination="A6x-OA-ZXA" id="Gns-ch-50l"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3aX-S9-O1k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiw-7I-ZZF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A6x-OA-ZXA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="A6x-OA-ZXA" secondAttribute="bottom" id="KI0-Cn-1ki"/>
+                        <constraint firstAttribute="trailing" secondItem="A6x-OA-ZXA" secondAttribute="trailing" id="LQs-D3-kd8"/>
+                        <constraint firstItem="A6x-OA-ZXA" firstAttribute="top" secondItem="eiw-7I-ZZF" secondAttribute="top" id="PbG-YB-8F2"/>
+                        <constraint firstItem="A6x-OA-ZXA" firstAttribute="leading" secondItem="eiw-7I-ZZF" secondAttribute="leading" id="yfW-ng-TnH"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eiw-7I-ZZF" secondAttribute="bottom" id="46w-7v-9zi"/>
+                <constraint firstItem="A6x-OA-ZXA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8GX-71-3iq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="A6x-OA-ZXA" secondAttribute="trailing" id="CEP-eP-INT"/>
+                <constraint firstItem="eiw-7I-ZZF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tda-Ea-G8V"/>
+                <constraint firstItem="eiw-7I-ZZF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hhV-1P-ibB"/>
+                <constraint firstItem="eiw-7I-ZZF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="vP2-L8-t6K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>

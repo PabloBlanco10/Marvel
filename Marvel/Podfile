@@ -1,0 +1,8 @@
+target 'Marvel' do
+  use_frameworks!
+  pod 'Alamofire'
+
+  target 'MarvelTests' do
+    inherit! :search_paths
+  end
+end

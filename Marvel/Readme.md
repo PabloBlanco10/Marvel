@@ -1,0 +1,1 @@
+Architecture : MVVM with closures and Router pattern including DI by ViewControllerFactroy
